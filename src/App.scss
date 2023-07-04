@@ -80,7 +80,7 @@
   width: 36rem;
   height: 23rem;
   &:hover {
-    cursor: url(./assets/mouse.svg), auto;
+    cursor: pointer;
     .frame_Wrapper {
       filter: blur(7px);
 
