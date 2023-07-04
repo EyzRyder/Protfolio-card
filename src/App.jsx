@@ -19,8 +19,8 @@ function App() {
   const follow = useRef();
   const mousePosition = useMousePosition();
   const frameStyle = {
-    '--mouse-y': `${mousePosition.y + 30}px`,
-    '--mouse-x': `${mousePosition.x + 10}px`,
+    '--mouse-y': `${mousePosition.y + 70}px`,
+    '--mouse-x': `${mousePosition.x + 30}px`,
   };
 
   return (
