@@ -4,7 +4,7 @@ import { Tilt } from 'react-tilt';
 import { useRef } from 'react';
 
 const defaultOptions = {
-  reverse: true, // reverse the tilt direction
+  reverse: false, // reverse the tilt direction
   max: 35, // max tilt rotation (degrees)
   perspective: 1000, // Transform perspective, the lower the more extreme the tilt gets.
   // scale: 1.1, // 2 = 200%, 1.5 = 150%, etc..
@@ -37,7 +37,9 @@ function App() {
             <span class="badge">Tailwind</span>
           </div>
           <p>
-            Aqui futuramente tera o link para a taualizacao do meu portfolio. Fiz esse card para testar um componente do meu portfolio e que bom que deu certo.
+            Aqui futuramente tera o link para a taualizacao do meu portfolio.
+            Fiz esse card para testar um componente do meu portfolio e que bom
+            que deu certo.
           </p>
         </div>
       </div>

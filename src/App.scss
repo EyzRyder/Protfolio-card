@@ -30,6 +30,7 @@
 .CardDetails {
   .head {
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     background-color: #921d3a;
     padding: 6px 16px;
@@ -54,11 +55,14 @@
     flex-direction: column;
     border-radius: 4px;
     color: white;
+    overflow: hidden;
 
     .badgeList {
       display: flex;
       flex-direction: row;
       gap: 6px;
+      white-space: nowrap;
+      animation: 5s sliding infinite linear;
       .badge {
         border-radius: 16px;
         background: linear-gradient(
@@ -70,6 +74,7 @@
         background-color: #e8a21f;
         padding: 6px 16px;
         font-size: small;
+        margin-left: 40px;
       }
     }
   }
@@ -152,5 +157,14 @@ img {
     width: 36rem;
     height: 23rem;
     z-index: 1;
+  }
+}
+
+@keyframes sliding {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
   }
 }
